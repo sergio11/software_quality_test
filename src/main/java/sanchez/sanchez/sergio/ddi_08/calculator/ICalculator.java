@@ -11,7 +11,7 @@ public interface ICalculator {
      * @param number2
      * @return 
      */
-    double add(double number1, double number2);
+    Double add(double number1, double number2);
     
     /**
      * Permite restar dos números
@@ -19,7 +19,7 @@ public interface ICalculator {
      * @param number2
      * @return 
      */
-    double subtract(double number1, double number2);
+    Double subtract(double number1, double number2);
     
     /**
      * Permite multiplicar dos números
@@ -27,7 +27,7 @@ public interface ICalculator {
      * @param number2
      * @return 
      */
-    double multiply(double number1, double number2);
+    Double multiply(double number1, double number2);
     
     /**
      * Permite dividir dos números
@@ -35,13 +35,22 @@ public interface ICalculator {
      * @param number2
      * @return 
      */
-    double divide(double number1, double number2);
+    Double divide(double number1, double number2);
     
-     /**
+    /**
      * Determina si un número es primo
+     *
      * @param number
-     * @return 
+     * @return
      */
-    boolean isPrime(int number);
+    Boolean isPrime(Integer number);
+    
+    
+    /**
+     * Devuelve el enésimo número primo
+     * @param nth enésimo número solicitado
+     * @return
+     */
+    Integer getNthPrimeNumber(Integer nth);
     
 }
