@@ -9,7 +9,7 @@ import sanchez.sanchez.sergio.ddi_08.calculator.ICalculator;
  * @author Sergio Sánchez Sánchez
  */
 public class Calculator implements ICalculator {
-    
+
     /**
      * Listado que contiene los número primos averiguados
      */

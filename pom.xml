@@ -60,6 +60,14 @@
                 </exclusion>
             </exclusions>
         </dependency>
+        
+        <!-- https://mvnrepository.com/artifact/org.hamcrest/java-hamcrest -->
+        <dependency>
+            <groupId>org.hamcrest</groupId>
+            <artifactId>java-hamcrest</artifactId>
+            <version>2.0.0.0</version>
+        </dependency>
+
     </dependencies>
     
     
@@ -155,6 +163,27 @@
             <plugin>
                 <groupId>org.sonarsource.scanner.maven</groupId>
                 <artifactId>sonar-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>com.lazerycode.jmeter</groupId>
+                <artifactId>jmeter-maven-plugin</artifactId>
+                <version>2.7.0</version>
+                <executions>
+                    <!-- Run JMeter tests -->
+                    <execution>
+                        <id>jmeter-tests</id>
+                        <goals>
+                            <goal>jmeter</goal>
+                        </goals>
+                    </execution>
+                    <!-- Fail build on errors in test -->
+                    <execution>
+                        <id>jmeter-check-results</id>
+                        <goals>
+                            <goal>results</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
