@@ -14,7 +14,7 @@
         <valid4j.version>0.5.0</valid4j.version>
         <junit.version>4.11</junit.version>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-        <sonar.login>623db2e950645d1ac15f04074e83824ff13daaff</sonar.login>
+        <sonar.login>571d3ad4785b36a23e6be0c66a6c491a7b914380</sonar.login>
         <sonar.organization>sergio11-github</sonar.organization>
     </properties>
     
